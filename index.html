@@ -9,40 +9,107 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link href="styles/normalize.css" rel="stylesheet">
     <link href="styles/index.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ca80037ee7.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <div class="experience__container">
-        <div class="header__container">
-            <h1 class="header__main">
-                Ville Danielsson
-            </h1>
-            <div class="header__info__container flex-row">
-                <p class="header__info__address text--sm">
-                    Täby 18354
-                </p>
-                <p class="header__info__phone-number text--sm">
-                    +46 76 767 84 77
-                </p>
-            </div>
-            <p class="header__email text--sm text--center">
+    <div class="page-grid">
+    <div class="header__container">
+        <p class="text--sm">
+            <span class="text--bold">I am</span> a fast learner
+        </p>
+        <p class="text--sm">
+            <span class="text--bold">I thrive when I</span> work in a team
+        </p>
+        <p class="text--sm">
+            <span class="text--bold">I have experience</span> working client-first
+        </p>
+    </div>   
+    <div class="name__container flex-column">
+        <h1 class="header__main">
+            Ville Danielsson
+        </h1>
+        <div class="header__info__container flex-row">
+            <p class="header__info__address text--sm">
+                <i class="fa-solid fa-house"></i>
+                Stockholm
+            </p>
+            <p class="header__info__phone-number text--sm">
+                <i class="fa-solid fa-phone"></i>
+                +46 76 767 84 77
+            </p>
+            <p class="header__email text--sm">
+                <i class="fa-solid fa-envelope"></i>
                 villeisakd@gmail.com
             </p>
-        </div>   
-        <p class="text--sm">
-            <span class="text--bold">I am</span> a fast learner, optimistic and solutions-oriented
-        </p>
-        <p class="text--sm">
-            <span class="text--bold">I thrive when I</span> work in a team, have responsibility and focus on customers
-        </p>
-        <p class="text--sm">
-            <span class="text--bold">I have experience</span> taking initiative, working customer-first and coordinating internationally
-        </p>
+            <p class="text--sm">
+                <i class="fa-brands fa-github"></i>
+                CrazedBySerenity
+            </p>
+        </div>
+    </div>
+    <div class="skills__container">
+        <h2 class="experience__header experience__card__header--margins">
+            Skills
+        </h2>
+        <h3 class="experience__card__header experience__card__header--margins experience__card__header--smaller">
+            Javascript
+        </h3>
+        <div class="skill-bar">
+            <div class="skill-bar-fill js">
 
+            </div>
+        </div>
+        <h3 class="experience__card__header experience__card__header--margins experience__card__header--smaller">
+            Unity
+        </h3>
+        <div class="skill-bar">
+            <div class="skill-bar-fill unity">
+
+            </div>
+        </div>
+        <h3 class="experience__card__header experience__card__header--margins experience__card__header--smaller skills__header">
+            C#
+        </h3>
+        <div class="skill-bar">
+            <div class="skill-bar-fill csharp">
+
+            </div>
+        </div>
+        <h3 class="experience__card__header experience__card__header--margins experience__card__header--smaller">
+            React
+        </h3>
+        <div class="skill-bar">
+            <div class="skill-bar-fill react">
+
+            </div>
+        </div>
+    </div>
+    <div class="experience__container">
         <h2 class="experience__header">
             Experience
         </h2>
+        <div class="experience__card flex-column">
+            <div class="flex-column">
+                <div class="flex-row">
+                    <h3 class="experience__card__header">
+                        Mobile app developer
+                    </h3>
+                    <p class="text--sm experience__card__duration  text--bold">
+                        1 Year
+                    </p>
+                </div>
+                <p class="text--sm">
+                    Remote work for a client (Sweden)
+                </p>
+            </div>
+            <ul class="list">
+                <li class="text--sm">Handled the technical side of developing a mobile app in Unity and publishing to Apple TestFlight</li>
+                <li class="text--sm">Worked as part of smaller team to create prototypes and proofs-of-concept for an IOS app</li>
+                <li class="text--sm">Systematically produced solutions to make the clients vision come to life and continiously improve on the base concept</li>
+            </ul>
+        </div>
         <div class="experience__card flex-column">
             <div class="flex-column">
                 <div class="flex-row">
@@ -83,27 +150,8 @@
                 <li class="text--sm">Developed creative furniture combinations based on the customers specific needs</li>
             </ul>
         </div>
-        <div class="experience__card flex-column">
-            <div class="flex-column">
-                <div class="flex-row">
-                    <h3 class="experience__card__header">
-                        Mobile app developer
-                    </h3>
-                    <p class="text--sm experience__card__duration  text--bold">
-                        1 Year
-                    </p>
-                </div>
-                <p class="text--sm">
-                    Remote work for a client (Sweden)
-                </p>
-            </div>
-            <ul class="list">
-                <li class="text--sm">Handled the technical side of developing a mobile app in Unity and publishing to Apple TestFlight</li>
-                <li class="text--sm">Worked as part of smaller team to create prototypes and proofs-of-concept for an IOS app</li>
-                <li class="text--sm">Systematically produced solutions to make the clients vision come to life and continiously improve on the base concept</li>
-            </ul>
-        </div>
-
+    </div>
+    <div class="education__container">
         <h2 class="experience__header">
             Education
         </h2>
@@ -111,10 +159,10 @@
             <div class="flex-column">
                 <div class="flex-row">
                     <h3 class="experience__card__header">
-                        Front-end-development
+                        Front-end Development
                     </h3>
                     <p class="text--sm experience__card__duration  text--bold">
-                        Current
+                        Graduated June 2023
                     </p>
                 </div>
                 <p class="text--sm">
@@ -158,5 +206,6 @@
             </ul>
         </div>
     </div>
+</div>
 </body>
 </html>
